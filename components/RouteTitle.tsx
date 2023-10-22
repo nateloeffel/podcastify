@@ -17,5 +17,9 @@ export const RouteTitle = () => {
 	const title: string =
 		titles.find((route) => route.route == pathname)?.title ?? "Podcastify";
 
-	return <>{title}</>;
+	return (
+		<>
+			<div className="flex justify-center items-center">{title}</div>
+		</>
+	);
 };
